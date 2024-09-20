@@ -1,0 +1,35 @@
+#exercicio 2 
+#include<iostream>
+using namespace std;
+
+
+int main()
+{
+    int numero = 2;
+    char letra = 'd';
+    double numero2 = 7.77;
+    
+    
+    int* ptrnumero = &numero;
+    char* ptrletra = &letra;
+    double* ptrnumero2 = &numero2;
+    
+     cout<<"imprimindo antes da troca:"<<endl;
+     cout<<numero<<endl;
+     cout<<letra<<endl;
+     cout<<numero2<<endl;
+     
+    *ptrletra = 'c';
+    *ptrnumero = 50;
+    *ptrnumero2 = 14.75;
+    
+     cout<<"valores apos a modificacao:"<<endl;
+     cout<<numero<<endl;
+     cout<<letra<<endl;
+     cout<<numero2<<endl;
+     
+     
+     
+    
+    
+}
