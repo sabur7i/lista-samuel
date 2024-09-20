@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+void  troca(int &a, int &b){
+    int temp;
+    temp = b;
+    b = a;
+    a = temp;
+    
+}
+
+int main()
+{
+    int a = 5;
+    int b = 10;
+      cout<<"mostrando os valores antes da troca:"<< endl;
+      cout<<"valor de a:"<<endl;
+      cout<< a<< endl;
+      cout<<"valor de b:"<<endl;
+      cout<<b<<endl;
+      cout<<"mostrando apos a troca:"<<endl;
+      troca(a,b);
+      cout<<"valor de a:"<<endl;
+      cout<<a<<endl;
+      cout<<"valor de b:"<<endl;
+      cout<<b<<endl;
+}
