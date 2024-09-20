@@ -1,0 +1,23 @@
+using namespace std;
+#include <iostream>
+void calc_esfera(float R, float p,float *area, float *volume){
+    *area = 4*p*R*R;
+    *volume = (4.0/3.0)*p*R*R*R;
+}
+
+int main()
+{
+   float p;
+   float R;
+   float area,volume;
+   
+   cout<<"insira o raio desta esfera:"<<endl;
+   cin>>R;
+   cout<<"insira o pi desta esfera:"<<endl;
+   cin>>p;
+   calc_esfera(R,p,&area,&volume);
+   cout<<"o valor da area e:"<<area<<endl;
+   cout<<"o valor do volume e:"<<volume<<endl;
+   
+   
+}
