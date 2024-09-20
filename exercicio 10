@@ -1,0 +1,39 @@
+using namespace std;
+#include <iostream>
+#include <string>
+
+struct Horario{
+    int hora;
+    int minutos;
+    int segundos;
+    
+};
+struct Data{
+    int dia;
+    int mes;
+    int ano;
+};
+struct Compromisso{
+    Data data;
+    Horario horario;
+    string descricao;
+};
+
+int main()
+{
+    Compromisso compromisso;
+    
+      cout<<"insira a descricao deste compromisso:"<<endl;
+      getline(cin, compromisso.descricao);
+      
+      cout<<"insira a data deste compromisso (dia,mes e ano)"<<endl;
+      cin>>compromisso.data.dia>>compromisso.data.mes>>compromisso.data.ano;
+      
+      cout<<"insira o horario deste compromisso (horas, minutos e segundos)"<<endl;
+      cin>>compromisso.horario.hora>>compromisso.horario.minutos>>compromisso.horario.segundos;
+      
+      cout<<"o seu compromisso:"<<compromisso.descricao<<endl;
+      cout<<"esta marcado para a data:"<<compromisso.data.dia<<"/"<<compromisso.data.mes<<"/"<<compromisso.data.ano<<endl;
+      cout<<"no horario:"<<compromisso.horario.hora<<":"<<compromisso.horario.minutos<<":"<<compromisso.horario.segundos;
+      return 0;
+}
